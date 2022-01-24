@@ -1,9 +1,5 @@
 @import '../base/settings';
 
-$white: #fff;
-$google-blue: #4285f4;
-$button-active-blue: #1669f2;
-
 .auth-container {
   height: 100vh;
   width: 100vw;
@@ -48,6 +44,7 @@ $button-active-blue: #1669f2;
   font-weight: bolder;
   letter-spacing: .5px;
   margin: 1rem auto;
+  color: $dark-grey;
 }
 
 .inputs-container {
@@ -99,8 +96,17 @@ $button-active-blue: #1669f2;
   cursor: pointer;
 }
 
+.link-to{
+  text-decoration: none;
+  color: $dark-grey;
+}
+
+.link-to:hover {
+  color: $primary;
+}
+
 @media screen and (max-width: 1000px) {
-  .login-container {
+  .form-container {
     width: 70%;
     margin-top: 3rem;
   }
@@ -159,7 +165,7 @@ $button-active-blue: #1669f2;
 
 
 @media screen and (max-width: 650px) {
-  .login-container {
+  .form-container {
     width: 90%;
   }
 
@@ -169,8 +175,8 @@ $button-active-blue: #1669f2;
 }
 
 @media screen and (max-width: 500px) {
-  .login-container {
-    height: 50%;
+  .form-container {
+    height: 60%;
   }
 
   .google-btn{

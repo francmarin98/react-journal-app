@@ -3,7 +3,9 @@ This project was bootstrapped with [Vite](https://vitejs.dev/guide/#trying-vite-
 
 ## Screenshots
 
-Coming soon...
+![img.png](src/screenshots/login.png)
+
+![img.png](src/screenshots/register.png)
 
 ## Available Scripts
 
