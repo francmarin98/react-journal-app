@@ -13,8 +13,7 @@ $button-active-blue: #1669f2;
   align-items: center;
 }
 
-.login-container {
-  height: 25em;
+.form-container {
   width: 30em;
   margin: 6em auto;
   border-radius: 10px;
@@ -22,6 +21,15 @@ $button-active-blue: #1669f2;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+}
+
+.login{
+  height: 25em;
+}
+
+
+.register{
+  height: 30em;
 }
 
 .login-info-container{

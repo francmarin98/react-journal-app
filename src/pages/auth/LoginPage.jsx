@@ -1,7 +1,7 @@
 export const LoginPage = () => {
     return (
         <>
-            <div className="login-container">
+            <div className="login form-container">
                 <div className="login-info-container">
                     <h1 className="title">Log In</h1>
                     <form className="inputs-container">
