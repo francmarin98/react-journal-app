@@ -4,10 +4,12 @@ import {RegisterPage} from "../pages/auth/RegisterPage";
 
 export const AuthRouter = () => {
     return (
-        <Switch>
-            <Route path="/auth/login" exact component={LoginPage}/>
-            <Route path="/auth/register" exact component={RegisterPage}/>
-            <Redirect to="/auth/login"/>
-        </Switch>
+        <div className="auth-container">
+            <Switch>
+                <Route path="/auth/login" exact component={LoginPage}/>
+                <Route path="/auth/register" exact component={RegisterPage}/>
+                <Redirect to="/auth/login"/>
+            </Switch>
+        </div>
     );
 };

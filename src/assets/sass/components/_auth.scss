@@ -1,0 +1,181 @@
+@import '../base/settings';
+
+$white: #fff;
+$google-blue: #4285f4;
+$button-active-blue: #1669f2;
+
+.auth-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: $primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  height: 25em;
+  width: 30em;
+  margin: 6em auto;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.login-info-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 0.5rem;
+  background-color: $login-bg;
+}
+
+.title{
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  font-weight: bolder;
+  letter-spacing: .5px;
+  margin: 1rem auto;
+}
+
+.inputs-container {
+  height: 75%;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.input, .btn {
+  width: 90%;
+  height: 3.125rem;
+  font-size: 1em;
+}
+
+.input {
+  padding-left: 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  border: .1px solid $primary;
+}
+
+.blue-input:focus {
+  border: 0;
+}
+
+.btn {
+  width: 90%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background-color: $primary;
+  cursor: pointer;
+}
+
+.inputs-container p {
+  margin: 0;
+}
+
+.span {
+  color: var(--light-pink);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .login-container {
+    width: 70%;
+    margin-top: 3rem;
+  }
+  .login-info-container {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .image-container {
+    display: none;
+  }
+}
+
+
+.google-btn {
+  cursor: pointer;
+  margin-top: 5px;
+  width: 50%;
+  height: 40px;
+  background-color: $google-blue;
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+
+  transition: box-shadow .3s ease;
+
+  .google-icon-wrapper {
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: $white;
+  }
+  .google-icon {
+    position: absolute;
+    margin-top: 11px;
+    margin-left: -8px;
+    width: 18px;
+    height: 18px;
+  }
+  .btn-text {
+    float: right;
+    margin: 11px 25px 0 0;
+    color: $white;
+    font-size: 12px;
+    letter-spacing: 0.2px;
+  }
+  &:hover {
+    box-shadow: 0 0 6px $google-blue;
+  }
+  &:active {
+    background: $button-active-blue;
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+  .login-container {
+    width: 90%;
+  }
+
+  .google-btn{
+    width: 60%
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .login-container {
+    height: 50%;
+  }
+
+  .google-btn{
+    width: 60%
+  }
+
+  .social-login {
+    flex-direction: column;
+    align-items: center;
+    height: 30%;
+  }
+
+  .login-info-container > p {
+    margin: 0;
+  }
+}
